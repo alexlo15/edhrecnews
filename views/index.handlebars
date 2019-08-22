@@ -1,0 +1,43 @@
+<br>
+<div class="container">
+    {{!-- This is Row 1 Articles --}}
+
+    <div class="row">
+        {{#each articles}}
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a class="titleloc" href={{this.link}}>{{this.title}}</a>
+                    </h5>
+                    <p class="card-text">{{this.summary}}</p>
+                    <button type="button" class="btn btn-secondary savebtn" data-id={{this._id}}>Save</button>
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+        <br>
+    
+    </div>
+</div>
+<br>
+
+{{!-- Javascript --}}
+<script type="text/javascript">
+    // This is for when you click the savenote button
+    $(document).on("click", ".savebtn", function () {
+        // Grab the id associated with the article from the submit button
+        var thisId = $(this).attr("data-id");
+        // This runs a POST request to change the saved value
+        $.ajax({
+            method: "POST",
+            url: "/api/articles/saved/" + thisId,
+            data: {
+                saved: true
+            }
+        }).then(function (data) {
+
+        });
+    });
+</script>
