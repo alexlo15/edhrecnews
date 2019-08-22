@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EDHrec(t) Articles</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  {{!-- Bootstrap --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  {{!-- Header --}}
+  <div id="header">
+    <br>
+    <img src="../../public/assets/images/mtg.jpg">
+    <h1>A janky ass app for viewing janky ass EDH articles!</h1>
+    <br><br>
+    <button type="submit" form="scrapeForm" class="btn btn-outline-dark scrapebtn">Scrape</button>
+    |
+    <button type="button" onclick="window.location.href = '/saved'"
+      class="savedlink btn btn-outline-dark">Saved</button>
+    |
+    <button type="submit" form="deleteForm" class="btn btn-outline-dark clearbtn">Clear Articles</button>
+    <br><br>
+    <form action="/api/scrape" method="POST" id="scrapeForm"></form>
+    <form action="/api/articles/delall" method="POST" id="deleteForm"></form>
+    </div>
+  {{{body}}}
+ 
+</body>
+
+</html>
