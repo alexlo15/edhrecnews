@@ -1,4 +1,4 @@
 # edhrecnews
 MongoDB scraper hw
 
-![screenshot](public/assets/images/shot.JPG)
+![screenshot](public/assets/images/sshot.JPG)
