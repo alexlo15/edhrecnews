@@ -7,6 +7,9 @@ var mongoose = require("mongoose");
 var logger = require("morgan");
 // Set Handlebars.
 var exphbs = require("express-handlebars");
+
+require('dotenv').config()
+
 //----
 
 
