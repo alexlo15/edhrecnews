@@ -3,6 +3,9 @@ RU-SOM-FSF-FT-06-2019-U-C | HW #12
 
 ___
 
+
+![screenshot](public/assets/images/sshot.JPG)
+
 ## Motivation
 To create an application combining use of MongoDB and a web scraper API.
 
@@ -27,12 +30,9 @@ To create an application combining use of MongoDB and a web scraper API.
 ## Features
 Website features: 
 
-1. SignIn Page
-2. Flashcards
-3. Drag & Drop Quiz
-4. Memory Match
-5. Whiteboard
-6. Leaderboard
+1. Save articles
+2. Scrape new articles
+3. Write notes for each article
 
 
 
@@ -41,13 +41,3 @@ A short snippet describing the license (MIT, Apache etc)
 
 RU © 
 [Alex Lo](https://github.com/alexlo15)
-
-
-
-
-
-
-
-
-
-![screenshot](public/assets/images/sshot.JPG)
