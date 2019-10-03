@@ -9,6 +9,12 @@ ___
 ## Motivation
 To create an application combining use of MongoDB and a web scraper API.
 
+## How to use
+1. git clone this repository
+2. open bash terminal or another command line interface
+3. navigate to the root of this folder (ending in "/edhrecnews)
+4. run command "npm install" and wait until download finishes
+5. run command "node server"
 
 **Built with:**
 * [Node](https://nodejs.org/en/)
