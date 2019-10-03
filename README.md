@@ -1,5 +1,5 @@
 # [edhrecnews](https://github.com/alexlo15/edhrecnews)
-RU-SOM-FSF-FT-06-2019-U-C | HW #12
+RU-SOM-FSF-FT-06-2019-U-C | HW #14
 
 ___
 
